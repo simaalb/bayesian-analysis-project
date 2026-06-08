@@ -1,6 +1,8 @@
 # Bayesian Analysis of Penguin Bill Length
 
-This repository contains the code and Stan models used for the Bayesian analysis of penguin bill length data using the Palmer Penguins dataset.
+This repository contains the code and Stan models developed for the Bayesian Statistics course project at Johannes Kepler University Linz for the Summer Semester 2026.
+
+The project investigates Bayesian models for predicting penguin bill length using the penguin dataset provided for the course, derived from the Palmer Penguins dataset introduced by Gorman, Williams, and Fraser (2014).
 
 ## Project Overview
 
