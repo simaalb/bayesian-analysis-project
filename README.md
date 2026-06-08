@@ -34,6 +34,7 @@ The models were implemented in Stan and fitted in R using the `rstan` package.
 │   ├── student_t_pooled.stan
 │   ├── student_t_separate.stan
 │   └── student_t_hierarchical.stan
+├── Penguins.RDS
 └── README.md
 ```
 
