@@ -100,13 +100,13 @@ stan_data_m3 <- list(
 
 #----------3- fit models---------
 
-model1 = stan_model("model1_pooled.stan")
+model1 = stan_model("stan/model1_pooled.stan")
 fit1 <- sampling(model1, data=stan_data_m1, iter=2000, chains=4, seed=123)
 
-model2 = stan_model("model2_separate.stan")
+model2 = stan_model("stan/model2_separate.stan")
 fit2 <- sampling(model2, data=stan_data_m2, iter=2000, chains=4, seed=123)
 
-model3 = stan_model("model3_hierarchical.stan")
+model3 = stan_model("stan/model3_hierarchical.stan")
 fit3 <- sampling(model3, data=stan_data_m3, iter=2000, chains=4, seed=123, control = list(adapt_delta = 0.99,max_treedepth=15))
 
 #----------4- convergence diagnostics-----------
@@ -257,13 +257,13 @@ ggplot(pred_df, aes(x = observed,y = predicted, color = species, shape = sex)) +
 
 # 8.1 fit models
 
-model1_t = stan_model("model1_pooled_t.stan")
+model1_t = stan_model("stan/model1_pooled_t.stan")
 fit1_t <- sampling(model1_t, data=stan_data_m1, iter=2000, chains=4, seed=123)
 
-model2_t = stan_model("model2_separate_t.stan")
+model2_t = stan_model("stan/model2_separate_t.stan")
 fit2_t <- sampling(model2_t, data=stan_data_m2, iter=2000, chains=4, seed=123)
 
-model3_t = stan_model("model3_hierarchical_t.stan")
+model3_t = stan_model("stan/model3_hierarchical_t.stan")
 fit3_t <- sampling(model3_t, data=stan_data_m3, iter=2000, chains=4, seed=123, control=list(adapt_delta = 0.99, max_treedepth = 15))
 
 
